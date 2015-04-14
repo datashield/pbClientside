@@ -11,7 +11,7 @@ ds.mean.pb<-function(x=NULL, type='split', datasources=NULL){
   
   # the input variable might be given as column table (i.e. D$x)
   # or just as a vector not attached to a table (i.e. x)
-  # we have to make sure the function deals with each case
+  # we have to make sure the function deals with each case correctly
   xnames <- extract(x)
   varname <- xnames$elements
   obj2lookfor <- xnames$holders
